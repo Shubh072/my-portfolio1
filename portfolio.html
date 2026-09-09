@@ -4,992 +4,873 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shubham Gayakwad - Portfolio</title>
-    <meta name="description" content="Interactive cybersecurity and software development portfolio for Shubham Gayakwad">
-    <meta property="og:title" content="Shubham Gayakwad - Portfolio">
-    <meta property="og:description" content="Interactive cybersecurity and software development portfolio for Shubham Gayakwad">
+    <title>Shubham Gayakwad | Cybersecurity & Software Engineer</title>
+    <meta name="description" content="Portfolio of Shubham Gayakwad - B.Tech in CSE (Cybersecurity), Software Developer, Network Security & Cloud Enthusiast.">
+    <meta property="og:title" content="Shubham Gayakwad | Cybersecurity & Software Engineer">
+    <meta property="og:description" content="Portfolio of Shubham Gayakwad - B.Tech in CSE (Cybersecurity), Software Developer, Network Security & Cloud Enthusiast.">
     <link rel="stylesheet" href="portfolio-style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
+    <!-- Top Navigation -->
+    <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home">Shubham Gayakwad</a>
-            </div>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">> About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#experience" class="nav-link">> Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link">> Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#skills" class="nav-link">> Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#education" class="nav-link">> Education</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#certifications" class="nav-link">> Certifications</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">> Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a href="Shubham_Gayakwad_Resume (1).pdf" target="_blank" class="nav-link resume-link">Resume</a>
-                </li>
+            <a href="#home" class="nav-logo" id="nav-brand">
+                <span class="logo-mark"><i class="fas fa-shield-halved"></i></span>
+                <span class="logo-text">Shubham <span class="text-accent">Gayakwad</span></span>
+            </a>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                <li class="nav-item"><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+
+            <div class="nav-actions">
+                <a href="Shubham_Gayakwad_Resume (1).pdf" target="_blank" rel="noopener noreferrer" class="btn btn-nav-resume" id="nav-resume-btn">
+                    <i class="fas fa-file-arrow-down"></i> Resume
+                </a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
+    <header id="home" class="hero-section">
+        <div class="container hero-container">
             <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-greeting">Hello, I'm</h1>
-                    <h2 class="hero-name">Shubham Gayakwad</h2>
-                    <p class="hero-description">
-                        "I'm a software development enthusiast and B.Tech student specializing in Cybersecurity and
-                        Programming.
-                        Skilled in Python, Java, C++, and Linux administration, I build solutions that address
-                        real-world
-                        challenges, leveraging technology to solve complex problems and collaborating effectively in
-                        team settings."
-                    </p>
-                    <a href="Shubham_Gayakwad_Resume (1).pdf" target="_blank" class="cta-button">
-                        Check Out My Resume
+                <div class="hero-badge" id="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span>Available for Opportunities • B.Tech CSE (Cybersecurity)</span>
+                </div>
+                <h1 class="hero-title" id="hero-title">
+                    Hi, I'm <span class="text-gradient">Shubham Gayakwad</span>
+                </h1>
+                <p class="hero-subtitle" id="hero-subtitle">
+                    Cybersecurity Specialist & Full-Stack Software Developer
+                </p>
+                <p class="hero-description" id="hero-description">
+                    Passionate B.Tech student specializing in Cybersecurity and Programming at Pimpri Chinchwad University (PCU), Pune. Skilled in Python, Java, C++, Network Security, and Linux Administration, with hands-on experience building resilient architectures, secure APIs, and AI-assisted tooling.
+                </p>
+
+                <div class="hero-actions" id="hero-actions">
+                    <a href="Shubham_Gayakwad_Resume (1).pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="hero-resume-btn">
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                    <a href="#projects" class="btn btn-secondary" id="hero-projects-btn">
+                        <i class="fas fa-layer-group"></i> View Projects
+                    </a>
+                    <a href="#contact" class="btn btn-outline" id="hero-contact-btn">
+                        <i class="fas fa-paper-plane"></i> Contact Me
                     </a>
                 </div>
-                <div class="hero-image">
-                    <img src="dev.png" alt="Shubham Gayakwad" class="profile-img">
+
+                <div class="hero-socials" id="hero-socials">
+                    <a href="https://github.com/Shubh072/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub Profile">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/shubh-gayakwad2/?originalSubdomain=in" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn Profile">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:shubhamgayakwad2807@gmail.com" class="social-icon" aria-label="Send Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="tel:+918780841063" class="social-icon" aria-label="Call Phone">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="profile-card-wrapper" id="profile-card-wrapper">
+                    <div class="profile-glow"></div>
+                    <div class="profile-frame">
+                        <img src="dev.png" alt="Shubham Gayakwad" class="profile-img" id="hero-profile-img">
+                    </div>
+                    <div class="profile-floating-badge badge-top">
+                        <i class="fas fa-shield-halved text-accent"></i>
+                        <span>Zero-Trust & NGFW Certified</span>
+                    </div>
+                    <div class="profile-floating-badge badge-bottom">
+                        <i class="fab fa-java text-accent"></i>
+                        <span>IIT Bombay Java (87.5%)</span>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </header>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about" class="section about-section">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <p>
-                    My name is Shubham Gayakwad, and I am currently pursuing a B.Tech in Computer Science with a
-                    specialization in Cybersecurity. I have developed a strong academic foundation through in-depth
-                    coursework in Computer Networking, Data Structures & Algorithms, Internet of Things (IoT), and
-                    Advanced Programming. These studies have equipped me with the technical expertise to design,
-                    implement, and analyze innovative cybersecurity solutions, while fostering a problem-solving
-                    mindset essential for addressing modern digital security challenges.
-                </p>
-                <p>
-                    I've developed a strong foundation in software engineering through various projects and
-                    hands-on experience. My technical expertise spans Python, Java, C++, MySQL, Linux, and Excel.
-                    Beyond technical skills, I value collaboration and communication, enabling me to lead and
-                    work effectively in team settings.
-                </p>
-                <p>
-                    I have actively contributed to the IEEE Student Chapter Innovare at Pimpri Chinchwad University,
-                    Pune,
-                    serving as the Workshop Member while also taking on leadership roles as the Head of the Cultural
-                    Committee and Head of the Japanese Committee. My responsibilities included organizing and managing
-                    diverse technical and non-technical events, fostering cross-cultural engagement, and ensuring smooth
-                    execution of workshops and cultural programs. These experiences have strengthened my leadership,
-                    event
-                    management, and collaboration skills, while enhancing my ability to work effectively in
-                    multicultural
-                    and multidisciplinary environments.
-                </p>
+            <div class="section-header">
+                <span class="section-tag">Background & Profile</span>
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Dedicated to securing systems, writing clean code, and solving real-world challenges.</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-main-card">
+                    <h3>Engineering Mindset & Security Focus</h3>
+                    <p>
+                        I am currently pursuing my B.Tech in Computer Science and Engineering with a specialization in Cybersecurity at <strong>PCET's Pimpri Chinchwad University (PCU), Pune</strong>. My academic coursework spans Computer Networking, Data Structures & Algorithms, Operating Systems, Linux Internals, and Cryptography.
+                    </p>
+                    <p>
+                        Throughout my academic journey and technical internships, I have focused on bridging software engineering with defensive security practices — from secure API development and database hardening to network traffic analysis and threat surface reduction.
+                    </p>
+                    <p>
+                        Beyond technical competencies, I actively contribute to campus leadership as the <strong>Head of the Cultural Committee</strong> and <strong>Head of the Japanese Committee</strong> within the IEEE Student Chapter Innovare at PCU, leading and mentoring teams of over 40 students for university-wide technical workshops and cultural programs.
+                    </p>
+                </div>
+
+                <div class="about-highlights-grid">
+                    <div class="highlight-card">
+                        <div class="highlight-icon"><i class="fas fa-shield-virus"></i></div>
+                        <h4>Cybersecurity</h4>
+                        <p>Network Defense, Palo Alto NGFW fundamentals, packet analysis with Wireshark, penetration testing basics with Burp Suite and Nmap.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon"><i class="fas fa-code"></i></div>
+                        <h4>Software Engineering</h4>
+                        <p>Object-oriented programming in Python, Java, and C++, building RESTful microservices, and implementing database persistence.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon"><i class="fas fa-server"></i></div>
+                        <h4>Systems & DevOps</h4>
+                        <p>Linux system administration (LPIC-1 curriculum), shell scripting with Bash, Git workflow coordination, and Atlassian Jira agile delivery.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon"><i class="fas fa-users-gear"></i></div>
+                        <h4>Team Leadership</h4>
+                        <p>Mentoring peers, conducting technical workshops, and coordinating multi-disciplinary student initiatives at IEEE Innovare.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="experience">
+    <section id="experience" class="section experience-section">
         <div class="container">
-            <h2 class="section-title">Experience</h2>
-            <div class="experience-grid">
-                <div class="experience-card">
-                    <div class="exp-header">
-                        <h3>Infosys Springboard Intern</h3>
-                        <h4> Python Developer (July 2026 – Sep 2026)</h4>
+            <div class="section-header">
+                <span class="section-tag">Work History & Simulations</span>
+                <h2 class="section-title">Experience</h2>
+                <p class="section-subtitle">Hands-on internships and practical technical engagements.</p>
+            </div>
+
+            <div class="experience-list">
+                <!-- Experience Item 1 -->
+                <div class="experience-item">
+                    <div class="exp-marker">
+                        <div class="exp-dot"></div>
                     </div>
-                    <div class="exp-divider"></div>
-                    <p>
-                        Completed a Python Full Stack Developer internship at Infosys, working on a finance management
-                        application with modules for Expense, Budget, Goals, Reports, Notifications, Portfolio, and
-                        Profile.
-                        Developed backend functionality, integrated APIs and database operations, and contributed to
-                        AI-driven
-                        features while collaborating with the development team to deliver a real-world full-stack
-                        solution.
-                    </p>
-                </div>
-                <div class="experience-card">
-                    <div class="exp-header">
-                        <h3>Cybersecurity Intern</h3>
-                        <h4> EduSkills | AICTE | Palo Alto Networks (Apr 2025 – Jun 2025)</h4>
+                    <div class="exp-card">
+                        <div class="exp-meta">
+                            <div>
+                                <h3 class="exp-role">Python Full Stack Developer Intern</h3>
+                                <h4 class="exp-company"><i class="fas fa-building text-accent"></i> Infosys Springboard</h4>
+                            </div>
+                            <span class="exp-date"><i class="far fa-calendar-alt"></i> July 2026 – Sep 2026</span>
+                        </div>
+                        <p class="exp-desc">
+                            Engineered core modules for a full-stack finance management platform (FinSight) covering Budgeting, Expense Tracking, Financial Goals, Automated Reporting, and User Portfolios. Implemented modular RESTful backend services, database persistence layers, and predictive spending calculation logic while collaborating in a cross-functional development team.
+                        </p>
+                        <div class="exp-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Full-Stack Development</span>
+                            <span class="tag">RESTful APIs</span>
+                            <span class="tag">Database Architecture</span>
+                            <span class="tag">Infosys Springboard</span>
+                        </div>
                     </div>
-                    <div class="exp-divider"></div>
-                    <p>
-                        in collaboration with Palo Alto Networks. This program provided extensive hands-on experience
-                        in network security, firewalls, threat detection, incident response, SOC tools, and
-                        cybersecurity
-                        best practices. I engaged in practical labs and real-time simulations using Palo Alto NGFW
-                        technologies,
-                        enhancing my technical expertise and building a strong foundation in security principles. This
-                        experience
-                        has strengthened my readiness for real-world cybersecurity challenges.
-                    </p>
                 </div>
 
-                <div class="experience-card">
-                    <div class="exp-header">
-                        <h3>Data Science Master Intern</h3>
-                        <h4> EduSkills | AICTE | Altair (Oct 2024 – Dec 2024)</h4>
+                <!-- Experience Item 2 -->
+                <div class="experience-item">
+                    <div class="exp-marker">
+                        <div class="exp-dot"></div>
                     </div>
-                    <div class="exp-divider"></div>
-                    <p>
-                        In this Completed a 10-week virtual internship focused on data science fundamentals,
-                        tools, and applications. Gained hands-on experience in data preprocessing, statistical
-                        analysis, machine learning model development, and visualization techniques. Collaborated on
-                        real-world datasets to solve analytical problems and generate actionable insights.
-                    </p>
+                    <div class="exp-card">
+                        <div class="exp-meta">
+                            <div>
+                                <h3 class="exp-role">Cybersecurity Intern</h3>
+                                <h4 class="exp-company"><i class="fas fa-shield-halved text-accent"></i> EduSkills | AICTE | Palo Alto Networks</h4>
+                            </div>
+                            <span class="exp-date"><i class="far fa-calendar-alt"></i> Apr 2025 – Jun 2025</span>
+                        </div>
+                        <p class="exp-desc">
+                            Completed an intensive cybersecurity training program in collaboration with Palo Alto Networks. Acquired practical experience with Next-Generation Firewalls (NGFW), zero-trust security policies, packet triage, network address translation (NAT), threat surface assessment, and Security Operations Center (SOC) procedures.
+                        </p>
+                        <div class="exp-tags">
+                            <span class="tag">Palo Alto NGFW</span>
+                            <span class="tag">Zero-Trust Network</span>
+                            <span class="tag">Threat Detection</span>
+                            <span class="tag">Wireshark</span>
+                            <span class="tag">Security Policies</span>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="experience-card">
-                    <div class="exp-header">
-                        <h3>Cybersecurity – IAM Developer Virtual Job Simulation</h3>
-                        <h4>Tata Consultancy Services (TCS)</h4>
+                <!-- Experience Item 3 -->
+                <div class="experience-item">
+                    <div class="exp-marker">
+                        <div class="exp-dot"></div>
                     </div>
-                    <div class="exp-divider"></div>
-                    <p>
-                        Assisted the cybersecurity consulting team in developing Identity and Access Management (IAM)
-                        solutions to strengthen digital defenses.
-                        Gained practical experience in access control, authentication, and authorization mechanisms.
-                        Learned industry best practices for securing digital infrastructures in alignment with
-                        organizational policies and compliance standards.
-                    </p>
+                    <div class="exp-card">
+                        <div class="exp-meta">
+                            <div>
+                                <h3 class="exp-role">Data Science Master Intern</h3>
+                                <h4 class="exp-company"><i class="fas fa-chart-line text-accent"></i> EduSkills | AICTE | Altair</h4>
+                            </div>
+                            <span class="exp-date"><i class="far fa-calendar-alt"></i> Oct 2024 – Dec 2024</span>
+                        </div>
+                        <p class="exp-desc">
+                            Completed a 10-week virtual internship centered on data analytics, statistical modeling, and data preprocessing. Worked on real-world datasets using Python libraries, applying exploratory data analysis, feature engineering, and model validation techniques.
+                        </p>
+                        <div class="exp-tags">
+                            <span class="tag">Data Science</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Statistical Modeling</span>
+                            <span class="tag">Altair Tools</span>
+                            <span class="tag">Data Analysis</span>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="experience-card">
-                    <div class="exp-header">
-                        <h3>Even Lead</h3>
-                        <h4>In Collage Level</h4>
+                <!-- Experience Item 4 -->
+                <div class="experience-item">
+                    <div class="exp-marker">
+                        <div class="exp-dot"></div>
                     </div>
-                    <div class="exp-divider"></div>
-                    <p>
-                        As Core Member of the Cultural Committee and Core Member of the Japanese Committee in the IEEE
-                        Student
-                        Chapter Innovare at PCET’s Pimpri Chinchwad University, I had the privilege of leading a
-                        team of over 40 students. My responsibilities included planning and executing a wide range
-                        of events — from technical workshops to cultural programs and cross-cultural initiatives. I
-                        coordinated with faculty advisors, delegated tasks, and provided mentorship to ensure each
-                        event ran smoothly. This role strengthened my skills in leadership, event management,
-                        communication, and team coordination.
-                    </p>
+                    <div class="exp-card">
+                        <div class="exp-meta">
+                            <div>
+                                <h3 class="exp-role">Cybersecurity – IAM Developer (Virtual Job Simulation)</h3>
+                                <h4 class="exp-company"><i class="fas fa-id-badge text-accent"></i> Tata Consultancy Services (TCS)</h4>
+                            </div>
+                            <span class="exp-date"><i class="far fa-calendar-alt"></i> Virtual Simulation</span>
+                        </div>
+                        <p class="exp-desc">
+                            Participated in an industry simulation tackling Identity and Access Management (IAM) architectures. Analyzed role-based access control (RBAC), multi-factor authentication protocols, and authorization models aligned with compliance and governance frameworks.
+                        </p>
+                        <div class="exp-tags">
+                            <span class="tag">Identity & Access Management (IAM)</span>
+                            <span class="tag">RBAC</span>
+                            <span class="tag">Authentication Protocols</span>
+                            <span class="tag">Compliance</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience Item 5 -->
+                <div class="experience-item">
+                    <div class="exp-marker">
+                        <div class="exp-dot"></div>
+                    </div>
+                    <div class="exp-card">
+                        <div class="exp-meta">
+                            <div>
+                                <h3 class="exp-role">Cultural & Japanese Committee Lead (Event Lead)</h3>
+                                <h4 class="exp-company"><i class="fas fa-users text-accent"></i> IEEE Student Chapter Innovare | PCU</h4>
+                            </div>
+                            <span class="exp-date"><i class="far fa-calendar-alt"></i> Campus Leadership</span>
+                        </div>
+                        <p class="exp-desc">
+                            Led a multidisciplinary team of over 40 students in organizing and executing collegiate workshops, technical hackathons, and cultural initiatives. Coordinated schedules, delegated tasks, liaised with faculty advisors, and ensured seamless event logistics.
+                        </p>
+                        <div class="exp-tags">
+                            <span class="tag">Leadership</span>
+                            <span class="tag">Team Coordination</span>
+                            <span class="tag">Event Management</span>
+                            <span class="tag">IEEE Innovare</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <section id="projects" class="section projects-section">
         <div class="container">
-            <h2 class="section-title">Projects</h2>
+            <div class="section-header">
+                <span class="section-tag">Featured Work</span>
+                <h2 class="section-title">Projects</h2>
+                <p class="section-subtitle">Real-world engineering applications across cybersecurity, full-stack web, and AI.</p>
+            </div>
+
             <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=250&fit=crop"
-                            alt="Cybersecurity Dashboard">
+                <!-- Project 1 -->
+                <div class="project-card" id="project-card-finsight">
+                    <div class="project-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=350&fit=crop" alt="Finsight Financial Manager" class="project-img" loading="lazy">
+                        <div class="project-overlay-badge">Infosys Project</div>
                     </div>
-                    <div class="project-content">
-                        <h3>Finsight - Financial Thing Manager</h3>
-                        <p>
-                            A comprehensive finance management application developed during my Infosys Python Full Stack
-                            Developer internship. The system
-                            includes Expense, Budget, Goals, Reports, Notifications, Portfolio, and Profile modules,
-                            along with AI-powered features to help users
-                            analyze and manage their finances effectively
+                    <div class="project-body">
+                        <h3 class="project-title">Finsight — Autonomous Financial Manager</h3>
+                        <p class="project-description">
+                            A comprehensive financial analytics and budget monitoring platform developed during my Infosys Python Full Stack internship. Features modular budgeting, expense logging, goal tracking, visual analytics, and predictive spending alerts.
                         </p>
-                        <div class="project-buttons">
-                            <a href="https://github.com/Shubh072/finsight-finance-project" class="project-link">View on
-                                GitHub</a>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Full-Stack</span>
+                            <span class="tag">REST APIs</span>
+                            <span class="tag">Financial AI</span>
+                            <span class="tag">Database Design</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/Shubh072/finsight-finance-project" target="_blank" rel="noopener noreferrer" class="btn btn-project-link">
+                                <i class="fab fa-github"></i> View Repository
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop"
-                            alt="Smart City Resources">
+                <!-- Project 2 -->
+                <div class="project-card" id="project-card-smartcity">
+                    <div class="project-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=350&fit=crop" alt="Smart City Resources" class="project-img" loading="lazy">
+                        <div class="project-overlay-badge">Hackathon Project</div>
                     </div>
-                    <div class="project-content">
-                        <h3>Smart City Resources</h3>
-                        <p>
-                            A smart city resource management solution developed during the SIC Hackathon
-                            to improve the accessibility and management of essential urban resources. The project
-                            focuses on using technology and data-driven solutions to help citizens and authorities
-                            efficiently monitor, access, and manage city resources.
+                    <div class="project-body">
+                        <h3 class="project-title">Smart City Resource Management</h3>
+                        <p class="project-description">
+                            Engineered during the SIC Hackathon, this cyber-physical system facilitates urban resource monitoring, utility distribution insights, and infrastructure alerting for municipal operators and citizens.
                         </p>
-                        <a href="https://github.com/Shubh072/SmartCity" class="project-link">View on GitHub</a>
-
+                        <div class="project-tags">
+                            <span class="tag">IoT & Cloud</span>
+                            <span class="tag">SIC Hackathon</span>
+                            <span class="tag">Resource Allocation</span>
+                            <span class="tag">Urban Tech</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/Shubh072/SmartCity" target="_blank" rel="noopener noreferrer" class="btn btn-project-link">
+                                <i class="fab fa-github"></i> View Repository
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=400&h=250&fit=crop"
-                            alt="Amazon Frontend Clone">
+                <!-- Project 3 -->
+                <div class="project-card" id="project-card-amazon">
+                    <div class="project-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=600&h=350&fit=crop" alt="Amazon Frontend Clone" class="project-img" loading="lazy">
+                        <div class="project-overlay-badge">Web Application</div>
                     </div>
-                    <div class="project-content">
-                        <h3>Amazon Frontend Clone</h3>
-                        <p>
-                            A responsive Amazon-inspired e-commerce frontend built using HTML and CSS. The project
-                            recreates the core shopping interface with a navigation bar, product sections, category
-                            layouts, search interface, and responsive design to provide a familiar online shopping
-                            experience.
+                    <div class="project-body">
+                        <h3 class="project-title">Amazon E-Commerce Storefront</h3>
+                        <p class="project-description">
+                            A responsive, pixel-accurate e-commerce user interface built using modern semantic HTML5 and CSS3. Recreates dynamic product showcase grids, navigation drawers, cart states, and mobile responsive layouts.
                         </p>
-                        <a href="https://github.com/Shubh072/Amazon-clone" class="project-link">View on GitHub</a>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">Responsive UI</span>
+                            <span class="tag">E-Commerce</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/Shubh072/Amazon-clone" target="_blank" rel="noopener noreferrer" class="btn btn-project-link">
+                                <i class="fab fa-github"></i> View Repository
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=250&fit=crop"
-                            alt="Blood Report Analysis Using AI">
+                <!-- Project 4 -->
+                <div class="project-card" id="project-card-bloodreport">
+                    <div class="project-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=350&fit=crop" alt="Blood Report Diagnostic AI" class="project-img" loading="lazy">
+                        <div class="project-overlay-badge">HealthTech AI</div>
                     </div>
-                    <div class="project-content">
-                        <h3>Blood Report Analysis Using AI</h3>
-                        <p>
-                            An AI-powered healthcare application that uses OCR to extract data from blood report images
-                            and
-                            analyzes the readings to identify abnormal values and potential health conditions. The
-                            system provides
-                            a user-friendly interface for patients and healthcare professionals to upload reports,
-                            review extracted results,
-                            and simplify the report analysis process while reducing manual errors.
+                    <div class="project-body">
+                        <h3 class="project-title">Blood Report Diagnostic AI</h3>
+                        <p class="project-description">
+                            A clinical diagnostic utility that uses Optical Character Recognition (OCR) to ingest pathology lab reports, extract key biomarker metrics, compare values against physiological thresholds, and highlight critical anomalies.
                         </p>
-                        <a href="https://github.com/Shubh072/Crimson1" class="project-link">View on GitHub</a>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">OCR Technology</span>
+                            <span class="tag">Biomarker Analysis</span>
+                            <span class="tag">HealthTech</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/Shubh072/Crimson1" target="_blank" rel="noopener noreferrer" class="btn btn-project-link">
+                                <i class="fab fa-github"></i> View Repository
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=400&h=250&fit=crop"
-                            alt="Recovery Ai">
+                <!-- Project 5 -->
+                <div class="project-card" id="project-card-recovery">
+                    <div class="project-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=600&h=350&fit=crop" alt="Revenue Recovery AI" class="project-img" loading="lazy">
+                        <div class="project-overlay-badge">Fintech System</div>
                     </div>
-                    <div class="project-content">
-                        <h3>Revenue Recovery Ai</h3>
-                        <p>
-                            An AI-powered B2B revenue recovery system that detects failed payments and overdue invoices,
-                            analyzes the likely cause using AI, prioritizes recovery cases, and selects
-                            policy-controlled recovery actions.
-                            Built with Python FastAPI, PostgreSQL, Gemini AI, Razorpay APIs, and automated email
-                            workflows,
-                            with audit trails, escalation rules, and revenue attribution.
+                    <div class="project-body">
+                        <h3 class="project-title">Revenue Recovery AI Platform</h3>
+                        <p class="project-description">
+                            An automated B2B financial recovery engine designed to handle overdue accounts and failed settlement reconciliation. Features FastAPI backend services, PostgreSQL storage, Gemini AI workflow intelligence, and secure payment integrations.
                         </p>
-                        <a href="https://github.com/Shubh072/recovery.ai" class="project-link">View on GitHub</a>
+                        <div class="project-tags">
+                            <span class="tag">FastAPI</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Gemini AI</span>
+                            <span class="tag">Fintech</span>
+                            <span class="tag">Audit Logs</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/Shubh072/recovery.ai" target="_blank" rel="noopener noreferrer" class="btn btn-project-link">
+                                <i class="fab fa-github"></i> View Repository
+                            </a>
+                        </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <section id="skills" class="section skills-section">
         <div class="container">
-            <h2 class="section-title">My Technical Skills</h2>
+            <div class="section-header">
+                <span class="section-tag">Capabilities</span>
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">Core technologies, toolchains, and cybersecurity methodologies.</p>
+            </div>
+
             <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">Python</span>
-                        <span class="skill-item">Java</span>
-                        <span class="skill-item">C++</span>
-                        <span class="skill-item">C</span>
-                        <span class="skill-item">DBMS</span>
+                <!-- Skill Category 1 -->
+                <div class="skill-category-card">
+                    <div class="skill-category-header">
+                        <div class="skill-icon-wrap"><i class="fas fa-code"></i></div>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class="skill-tags-list">
+                        <div class="skill-badge"><i class="fab fa-python text-accent"></i> Python</div>
+                        <div class="skill-badge"><i class="fab fa-java text-accent"></i> Java (IIT Bombay 87.5%)</div>
+                        <div class="skill-badge"><i class="fas fa-terminal text-accent"></i> C++</div>
+                        <div class="skill-badge"><i class="fas fa-code text-accent"></i> C Language</div>
+                        <div class="skill-badge"><i class="fas fa-database text-accent"></i> SQL & Relational DBMS</div>
                     </div>
                 </div>
 
-                <!--<div class="skill-category">
-                    <h3>Cybersecurity Tools</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">Nmap</span>
-                        <span class="skill-item">Wireshark</span>
-                        <span class="skill-item">Metasploit</span>
-                        <span class="skill-item">Burp Suite</span>
-                        <span class="skill-item">Kali Linux</span>
-                        <span class="skill-item">OWASP</span>
+                <!-- Skill Category 2 -->
+                <div class="skill-category-card">
+                    <div class="skill-category-header">
+                        <div class="skill-icon-wrap"><i class="fas fa-shield-halved"></i></div>
+                        <h3>Cybersecurity & Defense</h3>
                     </div>
-                </div>-->
-
-                <!--<div class="skill-category">
-                    <h3>System Administration</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">Linux</span>
-                        <span class="skill-item">Shell Scripting</span>
-                        <span class="skill-item">MySQL</span>
-                        <span class="skill-item">Apache</span>
-                        <span class="skill-item">Docker</span>
-                        <span class="skill-item">Git</span>
-                    </div>
-                </div>-->
-
-                <div class="skill-category">
-                    <h3>Web Development</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">HTML</span>
-                        <span class="skill-item">CSS</span>
-                        <span class="skill-item">JavaScript</span>
-                        <span class="skill-item">Bootstrap</span>
-                        <span class="skill-item">Node.js</span>
+                    <div class="skill-tags-list">
+                        <div class="skill-badge"><i class="fas fa-network-wired text-accent"></i> Network Defense & Zero-Trust</div>
+                        <div class="skill-badge"><i class="fas fa-shield-alt text-accent"></i> Palo Alto NGFW</div>
+                        <div class="skill-badge"><i class="fas fa-wave-square text-accent"></i> Wireshark Packet Analysis</div>
+                        <div class="skill-badge"><i class="fas fa-satellite-dish text-accent"></i> Nmap Port Scanning</div>
+                        <div class="skill-badge"><i class="fas fa-bug text-accent"></i> Burp Suite & OWASP Top 10</div>
+                        <div class="skill-badge"><i class="fab fa-linux text-accent"></i> Kali Linux Security Tooling</div>
                     </div>
                 </div>
 
-                <div class="skill-category">
-                    <h3>Tools & Software</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">Excel</span>
-                        <span class="skill-item">VS Code</span>
-                        <span class="skill-item">IntelliJ IDEA</span>
-                        <span class="skill-item">VMware</span>
-                        <span class="skill-item">VirtualBox</span>
-                        <span class="skill-item">Google Colab</span>
+                <!-- Skill Category 3 -->
+                <div class="skill-category-card">
+                    <div class="skill-category-header">
+                        <div class="skill-icon-wrap"><i class="fas fa-globe"></i></div>
+                        <h3>Web & Cloud Frameworks</h3>
+                    </div>
+                    <div class="skill-tags-list">
+                        <div class="skill-badge"><i class="fas fa-bolt text-accent"></i> FastAPI & REST Microservices</div>
+                        <div class="skill-badge"><i class="fab fa-html5 text-accent"></i> Semantic HTML5 & Modern CSS3</div>
+                        <div class="skill-badge"><i class="fab fa-js text-accent"></i> Modern JavaScript</div>
+                        <div class="skill-badge"><i class="fab fa-node-js text-accent"></i> Node.js & Express</div>
+                        <div class="skill-badge"><i class="fas fa-server text-accent"></i> PostgreSQL & MySQL</div>
+                    </div>
+                </div>
+
+                <!-- Skill Category 4 -->
+                <div class="skill-category-card">
+                    <div class="skill-category-header">
+                        <div class="skill-icon-wrap"><i class="fas fa-gears"></i></div>
+                        <h3>Systems & DevOps Tooling</h3>
+                    </div>
+                    <div class="skill-tags-list">
+                        <div class="skill-badge"><i class="fab fa-linux text-accent"></i> Linux SysAdmin & Bash</div>
+                        <div class="skill-badge"><i class="fab fa-git-alt text-accent"></i> Git & GitHub Version Control</div>
+                        <div class="skill-badge"><i class="fab fa-jira text-accent"></i> Atlassian Jira & Agile Delivery</div>
+                        <div class="skill-badge"><i class="fas fa-cubes text-accent"></i> VMware & VirtualBox</div>
+                        <div class="skill-badge"><i class="fas fa-laptop-code text-accent"></i> VS Code & IntelliJ IDEA</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-
-    <!-- Certifications Section -->
-    <section id="certifications" class="certifications">
+    <!-- Education Section -->
+    <section id="education" class="section education-section">
         <div class="container">
-            <h2 class="section-title">My Certifications</h2>
-            <div class="certifications-grid">
-                <div class="certification-card">
-                    <div class="cert-image">
-                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=300&h=200&fit=crop"
-                            alt="Network Security Certificate">
-                        <div class="cert-overlay">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
+            <div class="section-header">
+                <span class="section-tag">Academics</span>
+                <h2 class="section-title">Education</h2>
+                <p class="section-subtitle">Academic foundations and foundational engineering coursework.</p>
+            </div>
+
+            <div class="education-card">
+                <div class="edu-card-header">
+                    <div class="edu-title-group">
+                        <h3 class="edu-degree">Bachelor of Technology (B.Tech) in Computer Science & Engineering</h3>
+                        <h4 class="edu-school"><i class="fas fa-university text-accent"></i> PCET's Pimpri Chinchwad University (PCU), Pune</h4>
                     </div>
+                    <div class="edu-period">
+                        <i class="far fa-calendar-alt"></i> 2023 – 2027 (Expected)
+                    </div>
+                </div>
 
-                    <div class="cert-content">
-                        <h3>Network Security Fundamentals</h3>
-                        <p class="cert-issuer">Issued by: Shubham Gayakwad</p>
-                        <p class="cert-date">Issued: June 9, 2025</p>
+                <div class="edu-card-body">
+                    <p class="edu-summary">
+                        <strong>Specialization:</strong> Cybersecurity & Advanced Programming Systems.
+                        Pursuing a rigorous engineering curriculum focused on network defense, cryptographic security, operating system architecture, data structures, and enterprise software engineering.
+                    </p>
 
-                        <p class="cert-description">
-                            This certification validates expertise in the foundational concepts of network security,
-                            including secure network design, threat identification, mitigation techniques,
-                            and best practices for maintaining confidentiality, integrity, and availability
-                            across digital environments.
+                    <div class="edu-block">
+                        <h5 class="edu-block-title"><i class="fas fa-star text-accent"></i> Campus Leadership & IEEE Contributions</h5>
+                        <p class="edu-leadership-text">
+                            • <strong>IEEE Student Chapter Innovare:</strong> Active Workshop Member coordinating technical bootcamps.<br>
+                            • <strong>Leadership Roles:</strong> Head of Cultural Committee & Head of Japanese Committee, managing 40+ engineering students for college-level events.
                         </p>
-
-                        <div class="cert-skills">
-                            <span class="cert-skill">Network Security Basics</span>
-                            <span class="cert-skill">Threat Identification</span>
-                            <span class="cert-skill">Secure Network Architecture</span>
-                            <span class="cert-skill">Risk Mitigation</span>
-                        </div>
-
-                        <div class="cert-actions">
-                            <a href="#" class="cert-verify-btn">Verify Certificate</a>
-                            <button class="cert-view-btn" onclick="viewCertificate('network-sec-cert')">
-                                View Details
-                            </button>
-                        </div>
                     </div>
 
-
-                    <div class="certification-card">
-                        <div class="cert-image">
-                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=300&h=200&fit=crop"
-                                alt="CompTIA Security+">
-                            <div class="cert-overlay">
-                                <i class="fas fa-lock"></i>
-                            </div>
-                        </div>
-                        <div class="cert-content">
-                            <h3>Agile With Atlassian Jira</h3>
-                            <p class="cert-issuer">Atlassian University</p>
-                            <p class="cert-date">Issued: sept 2025</p>
-                            <p class="cert-description">
-                                This course introduces the principles of Agile project management and
-                                demonstrates how to apply them using Atlassian Jira, a widely used tool
-                                for agile teams. It covers Agile frameworks like Scrum and Kanban, backlog
-                                creation, sprint planning, issue tracking, and reporting. Learners gain
-                                hands-on experience managing workflows, collaborating in teams, and improving
-                                project delivery efficiency. By the end, participants understand how to use
-                                Jira to support Agile practices, optimize productivity, and adapt to
-                                changing requirements in software development or project management.
-                            </p>
-                            <div class="cert-skills">
-                                <span class="cert-skill">Hands-on Jira Experience</span>
-                                <span class="cert-skill">Career Advantage</span>
-                                <span class="cert-skill">Practical Agile Skills</span>
-                            </div>
-                            <div class="cert-actions">
-                                <a href="certificates/agile-atlassian-jira.pdf" class="cert-verify-btn" target="_blank"
-                                    rel="noopener noreferrer">Verify Certificate</a>
-                                <button class="cert-view-btn" onclick="viewCertificate('comptia-cert')">View
-                                    Details</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="cert-image">
-                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=300&h=200&fit=crop"
-                            alt="Java Training Certificate">
-                        <div class="cert-overlay">
-                            <i class="fas fa-code"></i>
-                        </div>
-                    </div>
-
-                    <div class="cert-content">
-                        <h3>Java Training Certification</h3>
-                        <p class="cert-issuer">Spoken Tutorial Project, IIT Bombay</p>
-                        <p class="cert-date">Issued: April 10, 2025</p>
-
-                        <p class="cert-description">
-                            Successfully completed Java training organized at Pimpri Chinchwad University by
-                            Dr. Sachin Jadhav with course material provided by the Spoken Tutorial Project, IIT Bombay.
-                            The certification included an online examination conducted remotely by IIT Bombay
-                            and invigilated by Dr. Vijay Patil. Earned a score of 87.50% and awarded 4 credits.
-                        </p>
-
-                        <div class="cert-skills">
-                            <span class="cert-skill">Core Java</span>
-                            <span class="cert-skill">OOP Concepts</span>
-                            <span class="cert-skill">Problem Solving</span>
-                            <span class="cert-skill">Java Programming</span>
-                        </div>
-
-                        <div class="cert-actions">
-                            <a href="#" class="cert-verify-btn">Verify Certificate</a>
-                            <button class="cert-view-btn" onclick="viewCertificate('java-cert')">
-                                View Details
-                            </button>
-                        </div>
-                    </div>
-
-
-                    <div class="certification-card">
-                        <div class="cert-image">
-                            <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=300&h=200&fit=crop"
-                                alt="Python Certification">
-                            <div class="cert-overlay">
-                                <i class="fab fa-python"></i>
-                            </div>
-                        </div>
-                        <div class="cert-content">
-                            <h3>Python for Cybersecurity</h3>
-                            <p class="cert-issuer">Coursera - University of Michigan</p>
-                            <p class="cert-date">Issued: December 2023</p>
-                            <p class="cert-description">
-                                Specialized certification focusing on Python programming for cybersecurity applications,
-                                automation, and security tool development.
-                            </p>
-                            <div class="cert-skills">
-                                <span class="cert-skill">Python Programming</span>
-                                <span class="cert-skill">Security Automation</span>
-                                <span class="cert-skill">Scripting</span>
-                            </div>
-                            <div class="cert-actions">
-                                <a href="#" class="cert-verify-btn">Verify Certificate</a>
-                                <button class="cert-view-btn" onclick="viewCertificate('python-cert')">View
-                                    Details</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="certification-card">
-                        <div class="cert-image">
-                            <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=300&h=200&fit=crop"
-                                alt="Linux Certification">
-                            <div class="cert-overlay">
-                                <i class="fab fa-linux"></i>
-                            </div>
-                        </div>
-                        <div class="cert-content">
-                            <h3>Linux Professional Institute Certification (LPIC-1)</h3>
-                            <p class="cert-issuer">Linux Professional Institute</p>
-                            <p class="cert-date">Issued: November 2023</p>
-                            <p class="cert-description">
-                                Entry-level Linux certification validating skills in system administration,
-                                command line operations, and Linux system maintenance.
-                            </p>
-                            <div class="cert-skills">
-                                <span class="cert-skill">Linux Administration</span>
-                                <span class="cert-skill">Shell Scripting</span>
-                                <span class="cert-skill">System Maintenance</span>
-                            </div>
-                            <div class="cert-actions">
-                                <a href="#" class="cert-verify-btn">Verify Certificate</a>
-                                <button class="cert-view-btn" onclick="viewCertificate('linux-cert')">View
-                                    Details</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="certification-card">
-                        <div class="cert-image">
-                            <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=300&h=200&fit=crop"
-                                alt="Database Security">
-                            <div class="cert-overlay">
-                                <i class="fas fa-database"></i>
-                            </div>
-                        </div>
-                        <div class="cert-content">
-                            <h3>Database Security Fundamentals</h3>
-                            <p class="cert-issuer">Oracle University</p>
-                            <p class="cert-date">Issued: October 2023</p>
-                            <p class="cert-description">
-                                Certification covering database security principles, access controls,
-                                encryption, and secure database administration practices.
-                            </p>
-                            <div class="cert-skills">
-                                <span class="cert-skill">Database Security</span>
-                                <span class="cert-skill">Access Control</span>
-                                <span class="cert-skill">Data Encryption</span>
-                            </div>
-                            <div class="cert-actions">
-                                <a href="#" class="cert-verify-btn">Verify Certificate</a>
-                                <button class="cert-view-btn" onclick="viewCertificate('db-cert')">View Details</button>
-                            </div>
+                    <div class="edu-block">
+                        <h5 class="edu-block-title"><i class="fas fa-book-open text-accent"></i> Relevant Coursework</h5>
+                        <div class="coursework-chips">
+                            <span class="course-chip">Computer Networks</span>
+                            <span class="course-chip">Data Structures & Algorithms</span>
+                            <span class="course-chip">Operating Systems & Linux Internals</span>
+                            <span class="course-chip">Database Management Systems (DBMS)</span>
+                            <span class="course-chip">Internet of Things (IoT)</span>
+                            <span class="course-chip">Cryptography & Security Protocols</span>
+                            <span class="course-chip">Object-Oriented Programming (Java/C++)</span>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section certifications-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Credentials</span>
+                <h2 class="section-title">Certifications</h2>
+                <p class="section-subtitle">Verified industry qualifications and academic credential records.</p>
+            </div>
+
+            <div class="certifications-grid">
+                <!-- Certificate 1: Palo Alto Networks -->
+                <div class="cert-card">
+                    <div class="cert-card-banner">
+                        <i class="fas fa-shield-halved cert-banner-icon"></i>
+                        <span class="cert-status-badge"><i class="fas fa-check-circle"></i> Verified</span>
+                    </div>
+                    <div class="cert-card-content">
+                        <h3 class="cert-title">Network Security Fundamentals</h3>
+                        <p class="cert-org"><i class="fas fa-award text-accent"></i> Palo Alto Networks Academy & EduSkills</p>
+                        <p class="cert-date"><i class="far fa-calendar-check"></i> Issued: June 9, 2025</p>
+                        <p class="cert-text">
+                            Validates zero-trust network principles, Next-Generation Firewall (NGFW) packet filtering, endpoint defense, security policy design, and enterprise attack surface mitigation.
+                        </p>
+                        <div class="cert-skills">
+                            <span class="tag">Network Defense</span>
+                            <span class="tag">Palo Alto NGFW</span>
+                            <span class="tag">Zero-Trust</span>
+                        </div>
+                        <div class="cert-card-actions">
+                            <a href="certificates/PAC.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-cert-view">
+                                <i class="fas fa-file-pdf"></i> View Official PDF
+                            </a>
+                            <button class="btn btn-cert-preview" onclick="openCertModal('certificates/PAC.pdf', 'Network Security Fundamentals - Palo Alto Networks')">
+                                <i class="fas fa-eye"></i> Quick Preview
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 2: Agile with Jira -->
+                <div class="cert-card">
+                    <div class="cert-card-banner">
+                        <i class="fab fa-jira cert-banner-icon"></i>
+                        <span class="cert-status-badge"><i class="fas fa-check-circle"></i> Verified</span>
+                    </div>
+                    <div class="cert-card-content">
+                        <h3 class="cert-title">Agile with Atlassian Jira</h3>
+                        <p class="cert-org"><i class="fab fa-jira text-accent"></i> Atlassian University</p>
+                        <p class="cert-date"><i class="far fa-calendar-check"></i> Issued: September 2025</p>
+                        <p class="cert-text">
+                            Certification in Agile engineering execution, Scrum and Kanban ceremonies, backlog grooming, sprint velocity analysis, and workflow automation rule configurations.
+                        </p>
+                        <div class="cert-skills">
+                            <span class="tag">Scrum & Kanban</span>
+                            <span class="tag">Sprint Planning</span>
+                            <span class="tag">Jira Workflows</span>
+                        </div>
+                        <div class="cert-card-actions">
+                            <a href="certificates/agile-atlassian-jira.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-cert-view">
+                                <i class="fas fa-file-pdf"></i> View Official PDF
+                            </a>
+                            <button class="btn btn-cert-preview" onclick="openCertModal('certificates/agile-atlassian-jira.pdf', 'Agile with Atlassian Jira - Atlassian University')">
+                                <i class="fas fa-eye"></i> Quick Preview
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 3: IIT Bombay Java -->
+                <div class="cert-card">
+                    <div class="cert-card-banner">
+                        <i class="fab fa-java cert-banner-icon"></i>
+                        <span class="cert-status-badge"><i class="fas fa-check-circle"></i> Distinction</span>
+                    </div>
+                    <div class="cert-card-content">
+                        <h3 class="cert-title">Java Training (87.5% Score)</h3>
+                        <p class="cert-org"><i class="fas fa-university text-accent"></i> Spoken Tutorial Project, IIT Bombay</p>
+                        <p class="cert-date"><i class="far fa-calendar-check"></i> Issued: April 10, 2025 • 4 Credits</p>
+                        <p class="cert-text">
+                            Rigorous certification exam conducted remotely by IIT Bombay. Achieved 87.50% distinction score across core OOP, multi-threading, collections, and algorithms.
+                        </p>
+                        <div class="cert-skills">
+                            <span class="tag">Java OOP</span>
+                            <span class="tag">Multithreading</span>
+                            <span class="tag">87.50% Score</span>
+                        </div>
+                        <div class="cert-card-actions">
+                            <a href="certificates/java.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-cert-view">
+                                <i class="fas fa-file-pdf"></i> View Official PDF
+                            </a>
+                            <button class="btn btn-cert-preview" onclick="openCertModal('certificates/java.pdf', 'Java Training Certification (87.5%) - IIT Bombay')">
+                                <i class="fas fa-eye"></i> Quick Preview
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 4: Python for Cybersecurity -->
+                <div class="cert-card">
+                    <div class="cert-card-banner">
+                        <i class="fab fa-python cert-banner-icon"></i>
+                        <span class="cert-status-badge"><i class="fas fa-check-circle"></i> Completed</span>
+                    </div>
+                    <div class="cert-card-content">
+                        <h3 class="cert-title">Python for Cybersecurity & Automation</h3>
+                        <p class="cert-org"><i class="fab fa-python text-accent"></i> Coursera / University of Michigan</p>
+                        <p class="cert-date"><i class="far fa-calendar-check"></i> Issued: December 2023</p>
+                        <p class="cert-text">
+                            Security automation scripts, custom socket programming, automated port enumeration, payload analysis, and network packet analysis using Python.
+                        </p>
+                        <div class="cert-skills">
+                            <span class="tag">Security Automation</span>
+                            <span class="tag">Socket Programming</span>
+                            <span class="tag">Python</span>
+                        </div>
+                        <div class="cert-card-actions">
+                            <a href="https://github.com/Shubh072" target="_blank" rel="noopener noreferrer" class="btn btn-cert-view">
+                                <i class="fas fa-external-link-alt"></i> View Profile
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 5: Linux LPIC-1 -->
+                <div class="cert-card">
+                    <div class="cert-card-banner">
+                        <i class="fab fa-linux cert-banner-icon"></i>
+                        <span class="cert-status-badge"><i class="fas fa-check-circle"></i> Curriculum</span>
+                    </div>
+                    <div class="cert-card-content">
+                        <h3 class="cert-title">Linux Administration (LPIC-1)</h3>
+                        <p class="cert-org"><i class="fab fa-linux text-accent"></i> Linux Professional Institute</p>
+                        <p class="cert-date"><i class="far fa-calendar-check"></i> Issued: November 2023</p>
+                        <p class="cert-text">
+                            Unix command-line mastery, daemon and systemd management, process scheduling, user permissions/ACLs, and automated shell scripting for system audits.
+                        </p>
+                        <div class="cert-skills">
+                            <span class="tag">Linux Administration</span>
+                            <span class="tag">Bash Automation</span>
+                            <span class="tag">SysOps</span>
+                        </div>
+                        <div class="cert-card-actions">
+                            <a href="https://github.com/Shubh072" target="_blank" rel="noopener noreferrer" class="btn btn-cert-view">
+                                <i class="fas fa-external-link-alt"></i> View Profile
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 6: Database Security -->
+                <div class="cert-card">
+                    <div class="cert-card-banner">
+                        <i class="fas fa-database cert-banner-icon"></i>
+                        <span class="cert-status-badge"><i class="fas fa-check-circle"></i> Completed</span>
+                    </div>
+                    <div class="cert-card-content">
+                        <h3 class="cert-title">Database Security & Access Control</h3>
+                        <p class="cert-org"><i class="fas fa-database text-accent"></i> Oracle University</p>
+                        <p class="cert-date"><i class="far fa-calendar-check"></i> Issued: October 2023</p>
+                        <p class="cert-text">
+                            Relational database security, SQL injection defense, role-based access control, cryptographic data protection at rest, and audit trail validation.
+                        </p>
+                        <div class="cert-skills">
+                            <span class="tag">SQL Injection Defense</span>
+                            <span class="tag">RBAC</span>
+                            <span class="tag">Database Hardening</span>
+                        </div>
+                        <div class="cert-card-actions">
+                            <a href="https://github.com/Shubh072" target="_blank" rel="noopener noreferrer" class="btn btn-cert-view">
+                                <i class="fas fa-external-link-alt"></i> View Profile
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Contact Section -->
-
-    <section id="contact" class="contact">
+    <section id="contact" class="section contact-section">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Contact Me</h2>
+                <p class="section-subtitle">Let's discuss cybersecurity opportunities, software projects, or collaborations.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info-card">
                     <h3>Let's Connect</h3>
-                    <p>
-                        I'm always interested in discussing cybersecurity projects, collaboration opportunities,
-                        or just having a conversation about technology and security.
+                    <p class="contact-intro">
+                        Whether you are looking for a dedicated cybersecurity intern, a full-stack software engineer, or want to discuss emerging tech, my inbox is always open.
                     </p>
-                    <div class="contact-links">
-                        <a href="mailto:shubhamgayakwad2807@gmail.com" class="contact-link">
-                            <i class="fas fa-envelope"></i>
-                            Gmail
+
+                    <div class="contact-methods">
+                        <a href="mailto:shubhamgayakwad2807@gmail.com" class="contact-method-item">
+                            <div class="contact-method-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <span class="method-label">Email Address</span>
+                                <span class="method-value">shubhamgayakwad2807@gmail.com</span>
+                            </div>
                         </a>
-                        <a href="https://www.linkedin.com/in/shubh-gayakwad2/?originalSubdomain=in"
-                            class="contact-link">
-                            <i class="fab fa-linkedin"></i>
-                            LinkedIn
+
+                        <a href="https://www.linkedin.com/in/shubh-gayakwad2/?originalSubdomain=in" target="_blank" rel="noopener noreferrer" class="contact-method-item">
+                            <div class="contact-method-icon"><i class="fab fa-linkedin-in"></i></div>
+                            <div>
+                                <span class="method-label">LinkedIn</span>
+                                <span class="method-value">linkedin.com/in/shubh-gayakwad2</span>
+                            </div>
                         </a>
-                        <a href="https://github.com/Shubh072/" class="contact-link">
-                            <i class="fab fa-github"></i>
-                            GitHub
+
+                        <a href="https://github.com/Shubh072/" target="_blank" rel="noopener noreferrer" class="contact-method-item">
+                            <div class="contact-method-icon"><i class="fab fa-github"></i></div>
+                            <div>
+                                <span class="method-label">GitHub</span>
+                                <span class="method-value">github.com/Shubh072</span>
+                            </div>
                         </a>
+
+                        <a href="tel:+918780841063" class="contact-method-item">
+                            <div class="contact-method-icon"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <span class="method-label">Direct Phone</span>
+                                <span class="method-value">+91 8780841063</span>
+                            </div>
+                        </a>
+
+                        <div class="contact-method-item static">
+                            <div class="contact-method-icon"><i class="fas fa-location-dot"></i></div>
+                            <div>
+                                <span class="method-label">Location</span>
+                                <span class="method-value">Pune, Maharashtra, India</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="contact-form">
-                    <form>
+
+                <div class="contact-form-card">
+                    <h3>Send a Direct Message</h3>
+                    <form id="contact-form" onsubmit="handleContactSubmit(event)">
                         <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
+                            <label for="contact-name">Your Full Name</label>
+                            <input type="text" id="contact-name" name="name" placeholder="John Doe" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
+                            <label for="contact-email">Your Email Address</label>
+                            <input type="email" id="contact-email" name="email" placeholder="john@example.com" required>
                         </div>
                         <div class="form-group">
-                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                            <label for="contact-subject">Subject</label>
+                            <input type="text" id="contact-subject" name="subject" placeholder="Project Inquiry / Job Opportunity" required>
                         </div>
-                        <button type="submit" class="submit-btn">Send Message</button>
+                        <div class="form-group">
+                            <label for="contact-message">Message</label>
+                            <textarea id="contact-message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit" id="contact-submit-btn">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
                     </form>
+                    <div id="contact-form-feedback" class="form-feedback hidden"></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Modals -->
-    <div id="cybersecurity-modal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('cybersecurity-modal')">&times;</span>
-            <h2>Cybersecurity Dashboard - Live Demo</h2>
+    <!-- Certificate Preview Modal -->
+    <div id="cert-modal" class="modal" onclick="closeCertModalOnBackdrop(event)">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h3 id="cert-modal-title" class="modal-title">Certificate Preview</h3>
+                <button class="modal-close" onclick="closeCertModal()">&times;</button>
+            </div>
             <div class="modal-body">
-                <div class="demo-preview">
-                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400&fit=crop"
-                        alt="Dashboard Preview">
-                </div>
-                <div class="demo-features">
-                    <h3>Key Features:</h3>
-                    <ul>
-                        <li>🔒 Real-time threat monitoring</li>
-                        <li>📊 Security analytics dashboard</li>
-                        <li>🚨 Automated alert system</li>
-                        <li>📈 Vulnerability assessment reports</li>
-                        <li>🔍 Network traffic analysis</li>
-                    </ul>
-                    <div class="demo-buttons">
-                        <a href="#" class="demo-live-btn">View Live Demo</a>
-                        <a href="#" class="demo-code-btn">View Source Code</a>
-                    </div>
-                </div>
+                <iframe id="cert-modal-iframe" src="" title="Certificate Preview"></iframe>
+            </div>
+            <div class="modal-footer">
+                <a id="cert-modal-download-link" href="" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                    <i class="fas fa-external-link-alt"></i> Open Full Screen / Download
+                </a>
+                <button class="btn btn-secondary" onclick="closeCertModal()">Close</button>
             </div>
         </div>
     </div>
 
-    <!-- Skills Detail Modal -->
-    <div id="skills-modal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('skills-modal')">&times;</span>
-            <h2>Skill Details</h2>
-            <div class="modal-body">
-                <div id="skill-details-content">
-                    <!-- Dynamic content will be loaded here -->
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Contact Success Modal -->
-    <div id="contact-success-modal" class="modal">
-        <div class="modal-content success-modal">
-            <span class="close" onclick="closeModal('contact-success-modal')">&times;</span>
-            <div class="success-icon">✅</div>
-            <h2>Message Sent Successfully!</h2>
-            <p>Thank you for reaching out. I'll get back to you within 24 hours.</p>
-            <button class="success-btn" onclick="closeModal('contact-success-modal')">Close</button>
-        </div>
-    </div>
-
-    <!-- Floating Action Button -->
-    <div class="floating-actions">
-        <button class="fab-main" onclick="toggleFAB()">
-            <i class="fas fa-plus"></i>
-        </button>
-        <div class="fab-options">
-            <button class="fab-option" onclick="scrollToTop()" title="Back to Top">
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            <button class="fab-option" onclick="toggleTheme()" title="Toggle Theme">
-                <i class="fas fa-moon"></i>
-            </button>
-            <button class="fab-option" onclick="openModal('contact-quick-modal')" title="Quick Contact">
-                <i class="fas fa-envelope"></i>
-            </button>
-            <button class="fab-option" onclick="sharePortfolio()" title="Share Portfolio">
-                <i class="fas fa-share"></i>
-            </button>
-        </div>
-    </div>
-
-    <!-- Quick Contact Modal -->
-    <div id="contact-quick-modal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('contact-quick-modal')">&times;</span>
-            <h2>Quick Contact</h2>
-            <div class="modal-body">
-                <div class="quick-contact-options">
-                    <a href="mailto:shubhgayakwad@myyahoo.com" class="quick-contact-btn email-btn">
-                        <i class="fas fa-envelope"></i>
-                        <span>Email Me</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/shubh-gayakwad2" class="quick-contact-btn linkedin-btn">
-                        <i class="fab fa-linkedin"></i>
-                        <span>LinkedIn</span>
-                    </a>
-                    <a href="https://github.com/shubh07" class="quick-contact-btn github-btn">
-                        <i class="fab fa-github"></i>
-                        <span>GitHub</span>
-                    </a>
-                    <a href="tel:+91 8780841063" class="quick-contact-btn phone-btn">
-                        <i class="fas fa-phone"></i>
-                        <span>Call Me</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Notification Toast -->
-    <div id="notification-toast" class="toast">
-        <div class="toast-content">
-            <span class="toast-message"></span>
-            <button class="toast-close" onclick="closeToast()">&times;</button>
-        </div>
-    </div>
-
-    <!-- Certificate Detail Modals -->
-    <div id="ceh-cert" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('ceh-cert')">&times;</span>
-            <h2>Completion of C Training - Certificate Details</h2>
-            <div class="modal-body">
-                <div class="cert-detail-content">
-                    <div class="cert-detail-image">
-                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop"
-                            alt="CEH Certificate">
-                    </div>
-                    <div class="cert-detail-info">
-                        <h3>🏆 Certification Highlights</h3>
-                        <ul>
-                            <li>✅ Comprehensive 20-module curriculum covering ethical hacking methodologies</li>
-                            <li>✅ Hands-on experience with 220+ hacking tools and techniques</li>
-                            <li>✅ Practical knowledge of penetration testing and vulnerability assessment</li>
-                            <li>✅ Understanding of network security, web application security, and wireless security
-                            </li>
-                            <li>✅ Knowledge of malware analysis and reverse engineering</li>
-                        </ul>
-                        <div class="cert-detail-skills">
-                            <h4>Skills Acquired:</h4>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Penetration Testing</span>
-                                <span class="skill-tag">Vulnerability Assessment</span>
-                                <span class="skill-tag">Network Security</span>
-                                <span class="skill-tag">Web Application Security</span>
-                                <span class="skill-tag">Wireless Security</span>
-                                <span class="skill-tag">Malware Analysis</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div id="java-cert" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('java-cert')">&times;</span>
-
-            <h2>Java Training - Certificate Details</h2>
-
-            <div class="modal-body">
-                <div class="cert-detail-content">
-
-                    <div class="cert-detail-image">
-                        <img src="file:///F:/certificates%20&%20projects/SHUBHAM-GAYAKWAD-Participant-Certificate.pdf"
-                            alt="Java Training Certificate">
-                    </div>
-
-                    <div class="cert-detail-info">
-                        <h3>Certification Highlights</h3>
-
-                        <ul>
-                            <li>Successfully completed Java Training</li>
-                            <li>Training offered by the Spoken Tutorial Project, IIT Bombay</li>
-                            <li>Java test organized at Pimpri Chinchwad University</li>
-                            <li>Successfully passed the online examination conducted remotely from IIT Bombay</li>
-                            <li>Achieved a score of 87.50%</li>
-                            <li>Earned 4 credits for the training</li>
-                        </ul>
-
-                        <div class="cert-detail-skills">
-                            <h4>Skills Acquired:</h4>
-
-                            <div class="skill-tags">
-                                <span class="skill-tag">Java</span>
-                                <span class="skill-tag">Object-Oriented Programming</span>
-                                <span class="skill-tag">Java Programming</span>
-                                <span class="skill-tag">Problem Solving</span>
-                                <span class="skill-tag">Programming Fundamentals</span>
-                            </div>
-                        </div>
-
-                        <div class="certificate-meta">
-                            <p><strong>Score:</strong> 87.50%</p>
-                            <p><strong>Credits:</strong> 4</p>
-                            <p><strong>Issued:</strong> April 10, 2025</p>
-                            <p><strong>Provider:</strong> Spoken Tutorial Project, IIT Bombay</p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <div id="cissp-cert" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('cissp-cert')">&times;</span>
-            <h2>CISSP Associate - Certificate Details</h2>
-            <div class="modal-body">
-                <div class="cert-detail-content">
-                    <div class="cert-detail-image">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop"
-                            alt="CISSP Certificate">
-                    </div>
-                    <div class="cert-detail-info">
-                        <h3>🏆 Certification Highlights</h3>
-                        <ul>
-                            <li>✅ Covers eight domains of information security</li>
-                            <li>✅ Advanced knowledge in security architecture and design</li>
-                            <li>✅ Understanding of asset security and data classification</li>
-                            <li>✅ Knowledge of security engineering principles</li>
-                            <li>✅ Expertise in communication and network security</li>
-                        </ul>
-                        <div class="cert-detail-skills">
-                            <h4>Skills Acquired:</h4>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Security Architecture</span>
-                                <span class="skill-tag">Asset Security</span>
-                                <span class="skill-tag">Security Engineering</span>
-                                <span class="skill-tag">Communication Security</span>
-                                <span class="skill-tag">Identity Management</span>
-                                <span class="skill-tag">Security Assessment</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="python-cert" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('python-cert')">&times;</span>
-            <h2>Python for Cybersecurity - Certificate Details</h2>
-            <div class="modal-body">
-                <div class="cert-detail-content">
-                    <div class="cert-detail-image">
-                        <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=600&h=400&fit=crop"
-                            alt="Python Certificate">
-                    </div>
-                    <div class="cert-detail-info">
-                        <h3>🏆 Certification Highlights</h3>
-                        <ul>
-                            <li>✅ Specialized Python programming for cybersecurity applications</li>
-                            <li>✅ Development of security automation tools and scripts</li>
-                            <li>✅ Network security analysis using Python libraries</li>
-                            <li>✅ Data analysis and visualization for security metrics</li>
-                            <li>✅ Integration with security APIs and frameworks</li>
-                        </ul>
-                        <div class="cert-detail-skills">
-                            <h4>Skills Acquired:</h4>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Python Programming</span>
-                                <span class="skill-tag">Security Automation</span>
-                                <span class="skill-tag">Scripting</span>
-                                <span class="skill-tag">API Integration</span>
-                                <span class="skill-tag">Data Analysis</span>
-                                <span class="skill-tag">Network Analysis</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="linux-cert" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('linux-cert')">&times;</span>
-            <h2>Linux Professional Institute Certification (LPIC-1) - Certificate Details</h2>
-            <div class="modal-body">
-                <div class="cert-detail-content">
-                    <div class="cert-detail-image">
-                        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=600&h=400&fit=crop"
-                            alt="Linux Certificate">
-                    </div>
-                    <div class="cert-detail-info">
-                        <h3>🏆 Certification Highlights</h3>
-                        <ul>
-                            <li>✅ Comprehensive Linux system administration skills</li>
-                            <li>✅ Command line proficiency and shell scripting</li>
-                            <li>✅ System maintenance and troubleshooting</li>
-                            <li>✅ User and group management</li>
-                            <li>✅ File system management and permissions</li>
-                        </ul>
-                        <div class="cert-detail-skills">
-                            <h4>Skills Acquired:</h4>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Linux Administration</span>
-                                <span class="skill-tag">Shell Scripting</span>
-                                <span class="skill-tag">System Maintenance</span>
-                                <span class="skill-tag">User Management</span>
-                                <span class="skill-tag">File Systems</span>
-                                <span class="skill-tag">Network Configuration</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="db-cert" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('db-cert')">&times;</span>
-            <h2>Database Security Fundamentals - Certificate Details</h2>
-            <div class="modal-body">
-                <div class="cert-detail-content">
-                    <div class="cert-detail-image">
-                        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=600&h=400&fit=crop"
-                            alt="Database Security Certificate">
-                    </div>
-                    <div class="cert-detail-info">
-                        <h3>🏆 Certification Highlights</h3>
-                        <ul>
-                            <li>✅ Comprehensive database security principles and practices</li>
-                            <li>✅ Access control and user privilege management</li>
-                            <li>✅ Data encryption and key management</li>
-                            <li>✅ Database auditing and monitoring</li>
-                            <li>✅ Secure database administration practices</li>
-                        </ul>
-                        <div class="cert-detail-skills">
-                            <h4>Skills Acquired:</h4>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Database Security</span>
-                                <span class="skill-tag">Access Control</span>
-                                <span class="skill-tag">Data Encryption</span>
-                                <span class="skill-tag">Database Auditing</span>
-                                <span class="skill-tag">Security Monitoring</span>
-                                <span class="skill-tag">Compliance</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Loading Overlay -->
-    <div id="loading-overlay" class="loading-overlay">
-        <div class="loading-spinner">
-            <div class="spinner"></div>
-            <p>Loading Portfolio...</p>
-        </div>
-    </div>
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" onclick="scrollToTop()" title="Scroll back to top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Shubham Gayakwad. All rights reserved.</p>
-            <div class="footer-social">
-                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+        <div class="container footer-container">
+            <div class="footer-left">
+                <p>&copy; 2026 Shubham Gayakwad. Built with clean HTML, CSS & JavaScript.</p>
+            </div>
+            <div class="footer-socials">
+                <a href="https://github.com/Shubh072/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/shubh-gayakwad2/?originalSubdomain=in" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:shubhamgayakwad2807@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
     </footer>
 
     <script src="portfolio-script.js"></script>
 </body>
-
 </html>
